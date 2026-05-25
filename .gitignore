@@ -1,0 +1,13 @@
+.claude/
+node_modules/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+.DS_Store
+*.log
+
+# Playwright
+test-results/
+playwright-report/
+
+# Coverage
+coverage/
