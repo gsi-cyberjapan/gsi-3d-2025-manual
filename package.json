@@ -1,0 +1,26 @@
+{
+  "name": "gsi-3d-2025-manual",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:all": "pnpm test && pnpm test:e2e"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "gray-matter": "^4.0.3",
+    "playwright": "^1.58.2",
+    "typescript": "^5.8.0",
+    "vitepress": "^1.6.4",
+    "vitest": "^4.0.18"
+  },
+  "packageManager": "pnpm@10.29.2"
+}
