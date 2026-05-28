@@ -10,7 +10,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: "html",
   use: {
-    baseURL: "http://localhost:4173${basePath}",
+    baseURL: `http://localhost:4173${basePath}`,
     trace: "on-first-retry",
   },
   projects: [
@@ -21,7 +21,7 @@ export default defineConfig({
   ],
   webServer: {
     command: "pnpm docs:build && pnpm docs:preview",
-    url: "http://localhost:4173${basePath}",
+    url: `http://localhost:4173${basePath}`,
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,
     stdout: "pipe",
